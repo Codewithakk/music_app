@@ -1,0 +1,210 @@
+.lineyy{
+    width: 100%;
+    height: 4vh;
+}
+.artists{
+    /* margin-top: 2rem; */
+    width: 90%;
+    height: 50vh;
+    max-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    grid-gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.artists .heading{
+    width: 100%;
+    height: 10%;
+    margin-top: 0rem !important;
+    display: flex;
+    justify-content:space-between;
+}
+.artists .heading h1{
+// font-size: 1.55rem;
+ margin-left: 0.5rem;
+ font-size: 1.4rem;
+}
+.artists .heading p{
+    font-size: 1.1rem;
+    color:  #EE4950;
+    margin-right: 0rem;
+}
+.artists .heading p:hover{
+    cursor: pointer;
+    text-decoration: dashed;
+}
+.artists .items{
+    width: 100%;
+    min-height: 80%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    overflow-x:scroll;
+    grid-gap: 3rem;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+.artists .items::-webkit-scrollbar {
+    display: none;
+}
+
+
+.artists .items .boxbuzz:first-child{
+    width: 60%;
+    height: 100%;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+.artists .items .boxbuzz{
+width: 60%;
+height: 100%;
+transition: 1.5s ease;
+margin-top: 1.5rem;
+}
+.artists .items .boxbuzz:hover{
+    cursor: pointer;
+}
+.artists .spin{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artists .spinny{
+    width: 2rem;
+    height: 2rem;
+    color: #EE4950;
+}
+.artists .items .boxbuzz:hover{
+    transform: scale(1.03);
+}
+.artists .items .boxbuzz .image{
+    /* width: 110%;
+    height: 60%; */
+    width: 150px;
+    height: 150px;
+    display: flex;
+justify-content: center;
+align-items: center;
+      background-image: linear-gradient(#E06925, #D45640);
+      border-radius: 50%;
+}
+.artists .items img{
+    /* width: 7.5rem;
+    height: 7.5rem; */
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.artists .items h1{
+    font-size: 0.9rem;
+    text-align: center;
+}
+.artists .items::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width:913px) {
+    .liney{
+        height:4vh;
+        }
+    .artists{
+        /* margin-top: 2rem; */
+        width: 90%;
+        height: 35vh;
+        max-height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column ;
+        grid-gap: 0.6rem;
+    }
+    .artists .spin{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .artists .spinny{
+        width: 2rem;
+        height: 2rem;
+        color: #EE4950;
+    }
+    .artists .items{
+    width: 100%;
+    height: 75%;
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    overflow-x:scroll;
+    grid-gap: 2rem;
+    scroll-behavior: smooth;
+
+} 
+.artists .items .boxbuzz:first-child{
+    width: 60%;
+    height: 85%;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+.artists .items .boxbuzz{
+width: 60%;
+height: 85%;
+transition: 1.5s ease;
+margin-top: 1.5rem;
+}
+.artists .items .boxbuzz:hover{
+    cursor: pointer;
+}
+
+.artists .items .boxbuzz .image{
+ 
+    
+    width:7.5rem;
+    height:7.5rem;
+   
+    display: flex;
+justify-content: center;
+align-items: center;
+      background-image: linear-gradient(#E06925, #D45640);
+      border-radius: 50%;
+}
+.artists .items::-webkit-scrollbar {
+    display: none;
+}
+.artists .items img{
+    width: 6.85rem;
+    height: 6.85rem;
+    border-radius: 50%;
+    object-fit:fit;
+}
+
+    .artists .items h1{
+        font-size: 0.87rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .artists .heading{
+        align-items: center;
+    }
+    .artists .heading h1{
+        font-size: 110%;
+         margin-left: 0.5rem;
+        }
+        .artists .heading p{
+            font-size: 0.8rem;
+            color:  #EE4950;
+            margin-right: 1rem;
+        }
+}

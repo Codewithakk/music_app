@@ -1,0 +1,322 @@
+.lineyy{
+    width: 100%;
+    height: 4vh;
+}
+
+.songs{
+    width: 90%;
+    max-height: 55vh;
+    height: 55vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 1.5rem;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+.songs .heading{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content:space-between;
+    align-items: center;
+}
+.songs .heading h1{
+    width: 30% !important;
+    font-size: 1.4rem;
+    margin: 0;
+}
+.songs .heading p{
+    font-size: 1.1rem;
+    color:  #EE4950;
+    cursor: pointer;
+}
+
+.songs .items{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    overflow-x:scroll;
+    grid-gap: 1.3rem;
+    margin-top: 0.5rem;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+.songs .items::-webkit-scrollbar {
+    display: none;
+}
+.songs .items .boxzzy:first-child{
+    margin-left: 1rem;
+    min-width: 22%;
+    width: 22%;
+    max-height: 100%;
+    height:100% ;
+}
+.songs .items .boxzzy{
+    min-width: 22%;
+    width: 25%;
+    max-height: 100%;
+    height:100% ;
+    border-radius: 10px !important;
+    background-color: #18181a;
+}
+.songs .items .boxzzy:hover{
+    cursor: pointer;
+}
+.songs .items .boxzzy .image{
+    width: 100%;
+    max-height: 75%;
+    height: 75%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow:hidden;
+}
+.songs .items .boxzzy .image img{
+    max-width:100%;
+    max-height:100% !important;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    transition: 0.9s ease;
+}
+.songs .items .boxzzy .image img:hover{
+    transform: scale(1.08);
+    opacity: 0.6;
+}
+
+.songs .items .boxzzy .below{
+    width: 100%;
+    min-height: 25%;
+    height: 25%;
+    display: flex;
+    justify-content:space-around;
+    /* align-items: flex-start; */
+    margin-left: 0.3rem;
+}
+
+.songs .items .boxzzy .below .left{
+   width: 68%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.songs .items .boxzzy .below .right{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songs .items .boxzzy .below .right .like{
+    width: 36%;
+    height: 36%;
+    color: #EE4950;
+}
+.songs .items .boxzzy .below .right .nolike{
+    width: 36%;
+    height: 36%;
+    transition: 0.5s ease;
+}
+
+.songs .items .boxzzy .below .right .like:hover , .songs .items .boxzzy .below .right .nolike:hover{
+    cursor: pointer;
+}
+.songs .items .boxzzy .below .left h2{
+    width: 110%;
+    height: 50%;
+    font-size: 90%; 
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0;
+}
+.songs .spin{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songs .items .boxzzy .below .left  .ppp{
+    font-size: 0.7rem;
+    opacity: 0.5;
+    font-weight: 300;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+
+.songs .heading h1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.songs .heading h1{
+    width: 18%;
+}
+.songs .heading .play{
+    color: #EE4950;
+    width: 15%;
+    height: 15%;
+}
+
+
+
+
+.songs .items .boxzzy .below .right .nolike:hover{
+    color: #EE4950;
+}
+
+
+
+@media screen and (max-width:913px) {
+.songs{
+    width: 90%;
+    min-height: 35vh;
+    max-height: 40vh;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 1.5rem;
+}
+
+.songs .heading{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content:space-between;
+    align-items: center;
+}
+.songs .heading h1{
+    width: 200px !important;
+    font-size: 1.09rem;
+}
+.songs .heading p{
+    font-size: 0.78rem;
+    color:  #EE4950;
+}
+
+.songs .items{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    overflow-x:scroll;
+    grid-gap: 0.8rem;
+        margin-top: 0rem;
+            
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+.songs .items::-webkit-scrollbar {
+    display: none;
+}
+
+
+.songs .items .boxzzy:first-child{
+    margin-left:0.5rem;
+    min-width: 45%;
+
+    width: 45%;
+
+    max-height: 84%;
+
+    height:84% 
+    }
+.songs .items .boxzzy{
+    min-width: 45%;
+    width: 45%;
+    max-height: 84%;
+    height:84% ;
+    border-radius: 10px !important;
+    background-color: #18181a;
+}
+.songs .items .boxzzy .image{
+    width: 100%;
+    max-height: 70%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow:hidden;
+}
+.songs .items .boxzzy .image img{
+    max-width:100%;
+    max-height:100% !important;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+ 
+    }
+
+    .songs .items .boxzzy .below{
+        width: 100%;
+        min-height: 25%;
+        height: 25%;
+        display: flex;
+        justify-content:space-around;
+        /* align-items: flex-start; */
+        margin-left: 0.3rem;
+    }
+    
+    .songs .items .boxzzy .below .left{
+       width: 68%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .songs .items .boxzzy .below .right{
+        width: 32%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .songs .items .boxzzy .below .right .like{
+        width: 45%;
+        height: 45%;
+        color: #EE4950;
+    }
+    .songs .items .boxzzy .below .right .nolike{
+        height: 45%;
+        height: 45%;
+    }
+    .songs .items .boxzzy .below .left h2{
+        width: 110%;
+        height: 50%;
+        font-size: 90%; 
+        text-transform: capitalize;
+        font-weight: 450;
+        margin: 0;
+    }
+    .songs .spin{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .songs .items .boxzzy .below .left  .ppp{
+        font-size: 0.723rem;
+        opacity: 0.5;
+        font-weight: 450;
+        margin: 0;
+        text-transform: capitalize;
+    
+    }
+}
